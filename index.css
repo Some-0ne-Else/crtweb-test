@@ -79,9 +79,53 @@
     transition: all ease 0.3s;
 }
 
+.menu__link-text:hover {
+    opacity: 0.8;
+}
+
 .menu__link-text_hidden {
     visibility: hidden;
     opacity: 0;
+}
+
+.task-four {
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.task-four__test-area {
+    display: flex;
+    padding: 10px;
+}
+
+.task-four__text {
+    margin: 0;
+    visibility: hidden;
+}
+
+.task-four__text_visible {
+    visibility: visible;
+}
+
+.task-four__button {
+    width: 80px;
+    height: 20px;
+    margin-left: 30px;
+    visibility: hidden;
+}
+.task-four__button_visible {
+    visibility: visible;
+}
+.task-four__image {
+    width: 80px;
+    height: 80px;
+    margin-left: 30px;
+    visibility: hidden;
+}
+
+.task-four__image_visible {
+    visibility: visible;
 }
 
 .footer {
