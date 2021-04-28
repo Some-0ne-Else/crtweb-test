@@ -1,3 +1,5 @@
+'use strict';
+//Task 1,4
 const headerButton = document.querySelector('.header__button');
 const menu = document.querySelector('.menu');
 const menuLinkTextList = document.querySelectorAll(".menu__link-text");
@@ -43,7 +45,6 @@ checkallCheckbox.addEventListener('click', () => {
         taskFourText.classList.add("task-four__text_visible");
         taskFourButton.classList.add("task-four__button_visible");
         taskFourImage.classList.add("task-four__image_visible");
-
     }
     else {
         checkboxList.forEach((el) => el.checked = false);
@@ -52,3 +53,40 @@ checkallCheckbox.addEventListener('click', () => {
         taskFourImage.classList.remove("task-four__image_visible");
     }
 })
+
+
+//Task 2
+const array =  [1,2,3,4,5];
+const shiftOnStep = (arr, step) =>{
+  console.log("Initial array:", arr)
+  for(let i = 0; i< step; i++)
+    {
+      arr.unshift(arr[arr.length-1])
+      arr.pop()
+    }
+  console.log(`Array after shift on ${step} steps:`, arr)
+  return arr
+}
+
+shiftOnStep(array,3)
+
+//Task 3
+const strA = "aababba";
+const strB = "abbaabcd";
+
+const commonPart = (strA, strB) => {
+  let res =[];
+  for(let i =0; i<strA.length-1; i++){
+   for(let len = i+1; len <= strA.length;){
+     if(strB.includes(strA.substring(i,len))){
+       res.push(strA.substring(i,len))
+       len++;
+     } else{break}
+   } 
+
+}
+  console.log(`Common part of strings: ${res.sort((a, b) =>  b.length - a.length)[0]}`)
+  return res[0]
+}
+
+commonPart(strA,strB)
