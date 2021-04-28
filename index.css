@@ -1,0 +1,98 @@
+.page {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    height: 100vh;
+}
+
+.header {
+    height: 70px;
+    background-color: #200772;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.header__button {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 0;
+    outline: none;
+    margin-left: 10px;
+    transition: opacity ease 0.5s;
+}
+
+.header__button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.content {
+    display: flex;
+    background-color: gray;
+}
+
+.menu {
+    border-radius: 0 10px 10px 0;
+    background-color: yellow;
+    height: 80vh;
+    width: 200px;
+    transition: all ease 0.5s;
+}
+
+.menu_hidden {
+    width: 40px;
+}
+
+.menu__navigation {
+    max-width: 40px;
+}
+
+.menu__links {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 10px;
+}
+
+.menu__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu__link {
+    text-decoration: none;
+    background-color: transparent;
+    background-image: url("./img/circle.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+.menu__link-text {
+    visibility: visible;
+    opacity: 1;
+    display: inline;
+    padding: 5px 20px 0 20px;
+    transition: all ease 0.3s;
+}
+
+.menu__link-text_hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.footer {
+    background-color: Black;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__text {
+    color: white;
+    font-size: 16px;
+}
